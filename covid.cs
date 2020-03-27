@@ -55,7 +55,6 @@ namespace code
                 else if (Choices == "n" || Choices == "N")
                 {
                     Console.WriteLine("Stay safe! Wear masks! Wash your hands!");
-                    System.Windows.Forms.Application.Exit();
                 }
 
             }
