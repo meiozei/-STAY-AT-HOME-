@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 
 namespace code
 {
     class covid
     {
-        static void main(string[] args)
+        static void Main(string[] args)
         {
             while (true)
             {
@@ -16,6 +16,7 @@ namespace code
                 Console.WriteLine("1.) Staying at home");
                 Console.WriteLine("2.) Outside, getting some groceries");
                 Console.WriteLine("3.) Fuck the police.");
+                Console.WriteLine("4.) Talking with my BF/GF/Joyfriend :D");
                 int thisChoice = Int32.Parse(Console.ReadLine());
 
                 switch (thisChoice)
@@ -40,6 +41,27 @@ namespace code
                             Console.WriteLine("Hello?!??!! GO HOME!");
                         }
                         break;
+
+                    case 4: 
+                        if (thisChoice == 4) {
+                            Console.WriteLine("Damn, I wish me too.");
+                        }
+                        break;
+
+                    case 5: 
+                        if (thisChoice > 4) {
+                            Console.WriteLine("Wtf? Enter something. A Valid number.");
+                            Console.Clear();
+                        }
+                        break;
+
+                    case 6: 
+                        if (thisChoice < 1) {
+                            Console.WriteLine("Enter a valid number.");
+                            Console.Clear();
+                        }
+                        break;
+
                     default:
                         Console.WriteLine("Enter something...");
                         break;
@@ -55,10 +77,9 @@ namespace code
                 else if (Choices == "n" || Choices == "N")
                 {
                     Console.WriteLine("Stay safe! Wear masks! Wash your hands!");
+                     System.Environment.Exit(1);
                 }
-
             }
-
         }
     }
 }
